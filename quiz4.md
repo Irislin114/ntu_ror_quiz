@@ -81,10 +81,11 @@
 
 7. 請列出在一個 rails 專案裡使用 bootstrap 套件的步驟
 	Ans:
-```		1.在gemfile裡輸入 gem 'bootstrap-sass'
-		2.在terminal執行bundle install
-		3.在app/assets/javascripts/application.js輸入//=require bootstrap
-		4.在app/assets/stylesheets/application.css輸入@import "bootstrap"; ，並將副檔名改為scss 
+```	
+1.在gemfile裡輸入 gem 'bootstrap-sass'
+2.在terminal執行bundle install
+3.在app/assets/javascripts/application.js輸入//=require bootstrap
+4.在app/assets/stylesheets/application.css輸入@import "bootstrap"; ，並將副檔名改為scss 
 ```
 
 8. 請說明在 .erb 檔案裡 ```<%= %>``` 與 ```<% %>``` 這兩種 tag 的差別
