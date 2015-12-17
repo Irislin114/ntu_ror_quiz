@@ -73,7 +73,7 @@
   end
   ```
  	Ans:
- 		```ruby
+ 		```
 		var == 5 ? "var is greater than or equal to 5" : "var is less than 5"
 		```
 
