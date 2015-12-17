@@ -1,13 +1,13 @@
 1. 請用簡單的方式敘述以下每一行程式碼：
 
-  ```ruby 
+```ruby 
   a = 1					#a變數的值為1
   @a = 2				#instance variable 
   @@a = 5				#class vairable 
   user = User.new		#用User這個class創造一個新object
   user.name				#user這個object的name的值
   user.name = "Joe"		#user.name的值為Joe
-  ```
+```
  			
 2. 什麼是 module? 請寫一段程式碼說明一個 class 要如何使用一個 module 裡面的 method?
 	Ans:
@@ -32,9 +32,9 @@
 		instance variable => 綁定物件本身
 
 4. 如果今天我為一個叫 User 的 class 產生一個新物件的方式是: 
-  ```
+```ruby
   User.new("Bob", "male", "Engineer")
-  ```
+```
 請寫出 User class 的 initialize method
 	Ans:
 ```ruby
