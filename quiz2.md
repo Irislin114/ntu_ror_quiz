@@ -13,7 +13,7 @@
 	Ans:
 		1.本身不是class，只能被include到class內使用，不能被new
 		2.
-		```
+```
 			module Knowledge
 				def math
 					puts "I love math"
@@ -24,7 +24,7 @@
 				include Knowledge
 				
 			end
-		```	
+```	
 
 3. 請說明 class 和 instance variable 之間的差別
 	Ans:
