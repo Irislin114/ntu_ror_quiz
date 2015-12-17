@@ -12,8 +12,9 @@
 2. 什麼是 module? 請寫一段程式碼說明一個 class 要如何使用一個 module 裡面的 method?
 	Ans:
 		1.本身不是class，只能被include到class內使用，不能被new
-		2.
+		
 ```ruby
+		#2.	
 			module Knowledge
 				def math
 					puts "I love math"
