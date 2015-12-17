@@ -13,7 +13,7 @@
 	Ans:
 		1.本身不是class，只能被include到class內使用，不能被new
 		2.
-		```ruby
+		```
 			module Knowledge
 				def math
 					puts "I love math"
@@ -32,12 +32,12 @@
 		instance variable => 綁定物件本身
 
 4. 如果今天我為一個叫 User 的 class 產生一個新物件的方式是: 
-  ```ruby
+  ```
   User.new("Bob", "male", "Engineer")
   ```
 請寫出 User class 的 initialize method
 	Ans:
-		```ruby
+		```
 			class User
 				def initialize(name, gender, job)
 					@name = name
