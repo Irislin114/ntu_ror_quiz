@@ -4,7 +4,7 @@
 
 2. 若今天需要為 ```Project``` 和 ```Issue``` 這兩個 Model 建立一對多的關係，請寫出實作上所需要的 migratiion 和 model 檔案 
 	Ans:
-		```ruby
+```ruby
 			class Project < ActiveRecord::Base
 				has_many :issues
 			end
@@ -29,21 +29,21 @@
 					end
 				end
 			end
-		```
+```
 		
 
 3. 若今天我有以下 model 檔：
 
-  ```ruby
+```ruby
   class User < ActiveRecord::Base
     has_many :groups_users
     has_many :groups, through: :groups_users 
   end
-  ```
+```
 
   請寫出和這個 model 檔相關連的 model 檔，以及這些 model 檔所需要的資料庫欄位
 	Ans:
-	```ruby
+```ruby
 		class Group <ActiveRecord::Base
 			has_many :groups_users
 			has_many :users, through: :groups_users
@@ -53,25 +53,25 @@
 			belongs_to :group
 			belongs_to :user
 		end
-	```
+```
 
 4. 延續第3題，如果需要讓一個叫 "Bob" 的使用者產生一個名字叫做 "Rails is Fun" 的社團，應該如何在 rails console 裡實作出來？
 	Ans:
-		```ruby
+```ruby
 			bob = User.create(name: "Bob")
 			group = Group.create(title: "Rails is Fun")
 			bob.groups << group
-		```
+```
 5. 延續第4題，請寫一段程式碼確保使用者在建立新社團時社團名字不可以是空白，而且不能超過50個字
 	Ans:
-		```ruby
+```ruby
 			class Group <ActiveRecord::Base
 				has_many :groups_users
 				has_many :users, through: :groups_users
 				
 				validates :title, presence: true, length: {maximum :50}
 			end
-		```
+```
 		
 	
 6. 請列出兩種方法檢查在 routes.rb 裡面設定的路由
@@ -88,6 +88,10 @@
 
 8. 請說明在 .erb 檔案裡 ```<%= %>``` 與 ```<% %>``` 這兩種 tag 的差別
 	Ans:
-		```<%= %>``` => 顯示Ruby程式執行結果，如```ruby <%= post.content%>```
-		```<% %>```  => 只執行Ruby程式但不會顯示結果，通常用在迴圈條件中，如```ruby <% @post.comments.each do |t| %>```
+```ruby
+<%= %> #=> 顯示Ruby程式執行結果，例如
+ruby <%= post.content%>
+<% %> #=> 只執行Ruby程式但不會顯示結果，通常用在迴圈條件中，如
+ruby <% @post.comments.each do |t| %>
+```
 		
