@@ -18,9 +18,9 @@
 		D: Destory
 
 4. 請問在 routes.rb 裡面加入以下程式碼會產生出哪一些 url？ (提示：在 browser 輸入```http://localhost:3000/rails/info/routes```)
-	```ruby
+```ruby
 	resources :users
-	```
+```
 	
 	Ans:
 		users_path
@@ -34,11 +34,11 @@
 
 6. 若今天發現一個 migration 檔寫錯，請問我應該用什麼指令回復到上一個版本的 migration? 
 	Ans:
-		```ruby
+```ruby
 		
 		rake db:rollback
 		
-		```
+```
 	
 7. 假設今天
 	* 我要在資料庫裡產出一個叫 group 的資料表
@@ -49,7 +49,7 @@
     * 請寫出一個能產生出以上需求的 migration 檔
 
 	Ans:
-		```ruby
+```ruby
 			
 		class Groups < ActiveRecord::Migration
 			def change
@@ -62,7 +62,7 @@
 			 end
 		end
 
-		```
+```
 	
 8. 請解釋什麼是 ActiveRecord? 
 	Ans:
